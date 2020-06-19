@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="hy">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" href="https://lh3.googleusercontent.com/proxy/AI0lfJTi6_-MSh-86uHpmJdt3X58Zm55MiOLeDKEc-C2zAyN9SnpHE9XCoWPXjpK8GRWvYya2XgNgBcWP96Z7xgnBzZ_MXkgLqs7I-I8xkLEjVh17WCqtcqiQ_Zgl22PfJYBpgdVqrE">
+    <title>Shopping site</title>
+  </head>
+  <body class="bg-light">
+    <!--Copy This Lines`-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="row " style="width: 100%;">
+      <div class="input-group col-12 col-md-4 ">
+        <select title="Language" class="custom-select" id="inputGroupSelect" aria-label="Example select with button addon">
+        <option selected>English</option>
+          <option>Russian</option>
+          <option>Armenian</option>
+        </select>
+      </div>
+      <div class="input-group col-12 col-md-4" style="margin-top:2%;">
+        <select title="Currency" class="custom-select" id="inputGroupSelect" aria-label="Example select with button addon">
+          <option selected>USD</option>
+          <option>AMD</option>
+          <option>RUB</option>
+          <option>EUR</option>
+          <option>GBP</option>
+        </select>
+      </div>
+      <button type="button" class="btn btn-primary d-none d-md-block col-sm-2">
+        Նախընտրելի: <span class="badge badge-pill badge-light">3</span>
+        <span class="sr-only">wishes count</span></div>
+      </button>
+    </nav>
+    <nav class="navbar  navbar-light">
+      <h1 class="navbar-brand" style="font-size: 23px; padding:8px; border-radius: 7.5px; cursor:pointer;">Հեռախոսներ</h1>
+      <form class="form-inline my-2 my-lg-0 ">
+      <input class="d-none d-md-block form-control mr-sm-2" style="width:320px;" type="search" placeholder="Փնտրել" aria-label="Search">
+      <button class="d-none d-md-block btn btn-outline-primary my-2 my-sm-0" type="submit" style="margin-right:18px;">Փնտրել</button>
+      <div class="dropdown">
+        <button type="button" title="User" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Իմ հաշվեհամարը
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#regModal">Գրանցվել</a>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Մտնել</a>
+          <a class="dropdown-item" href="#">Բանկային քարտ</a>
+          <a class="dropdown-item" href="#">Դուրս գալ</a>
+        </div>
+      </form>
+    </div>
+  </nav>
+  
+        <nav class="navbar navbar-expand-md navbar-light " style="background-color: #c3f2ff;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex justify-content-center">
+              <li class="nav-item dropdown col-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Samsung
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Samsung Galaxy S20 Ultra</a>
+                  <a class="dropdown-item" href="#">Samsung Galaxy M01</a>
+                  <a class="dropdown-item" href="#">Samsung Galaxy A21s</a>
+                  <a class="dropdown-item" href="#">Samsung Galaxy A50s</a>
+                  <a class="dropdown-item" href="#">Samsung Galaxy A30s</a>
+                  <a class="dropdown-item" href="#">Samsung Galaxy A10s</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown col-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  iPhone
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">iPhone 5s</a>
+                  <a class="dropdown-item" href="#">iPhone 6</a>
+                  <a class="dropdown-item" href="#">iPhone 6s</a>
+                  <a class="dropdown-item" href="#">iPhone 6+</a>
+                  <a class="dropdown-item" href="#">iPhone 7</a>
+                  <a class="dropdown-item" href="#">iPhone 7+</a>
+                  <a class="dropdown-item" href="#">iPhone 8</a>
+                  <a class="dropdown-item" href="#">iPhone 8+</a>
+                  <a class="dropdown-item" href="#">iPhone X</a>
+                  <a class="dropdown-item" href="#">iPhone Xs</a>
+                  <a class="dropdown-item" href="#">iPhone Xs Max</a>
+                  <a class="dropdown-item" href="#">iPhone XR</a>
+                  <a class="dropdown-item" href="#">iPhone 11</a>
+                  <a class="dropdown-item" href="#">iPhone 11 Pro</a>
+                  <a class="dropdown-item" href="#">iPhone 11 Pro Max</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown col-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Nokia
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Nokia 2.3</a>
+                  <a class="dropdown-item" href="#">Nokia 6.2</a>
+                  <a class="dropdown-item" href="#">Nokia 7.2</a>
+                  <a class="dropdown-item" href="#">Nokia 4.2</a>
+                  <a class="dropdown-item" href="#">Nokia 3.2</a>
+                </div>
+              </li>
+               <li class="nav-item dropdown col-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Xiaomi
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Redmi Note 9 Pro Max</a>
+                  <a class="dropdown-item" href="#">Redmi Note 9 Pro</a>
+                  <a class="dropdown-item" href="#">Xiaomi Mi 10 Pro</a>
+                  <a class="dropdown-item" href="#">Xiaomi Mi 10 </a>
+                  <a class="dropdown-item" href="#">Redmi K30 5G</a>
+                  <a class="dropdown-item" href="#">Redmi K30</a>
+                </div>
+              </li>
+            </ul>
+       </div>
+    </nav>
+    <div class="row " style="padding-top: 15px;">
+ <div class="   col-12">
+  <nav aria-label="breadcrumb " class="">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Գլխավոր</a></li>
+      <li class="breadcrumb-item"><a href="#">Խանութ</a></li>
+    </ol>
+  </nav>
+</div>
+
+<div class="col-lg-4  d-none d-lg-block   bg-light" style="border:2px solid #6c757d;">
+ <p>
+  <a class="btn text-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+   For iPhone lovers
+  </a>
+</p>
+<div class="collapse" id="collapseExample1">
+  <div class="card card-body border-0 " style="background: none;">
+    <div class="custom-control custom-checkbox  ">
+     <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone 5s</label></div>
+     <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone 6</label></div>
+     <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone 6s</label></div>
+     <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone 6+</label></div>
+     <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone 7</label></div>
+     <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone 7+</label></div>
+     <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone 8</label></div>
+     <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone 8+</label></div>
+     <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone X</label></div>
+       <div class="d-block"><input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone Xs</label></div>
+      <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone Xs Max</label></div>
+       <div class="d-block"><input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone XR</label></div>
+       <div class="d-block"><input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone 11</label></div>
+      <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone 11s</label></div>
+      <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone 11 Pro</label></div>
+      <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">iPhone 11 Pro Max</label></div>
+    </div>
+  </div>
+</div>
+<p>
+  <a class="btn text-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+    For Samsung lovers
+  </a>
+</p>
+<div class="collapse" id="collapseExample2">
+  <div class="card card-body border-0 " style="background: none;">
+    <div class="custom-control custom-checkbox  ">
+      <div class="d-block"><input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Samsung Galaxy S20 Ultra</label></div>
+      <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Samsung Galaxy M01</label></div>
+      <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Samsung Galaxy A21s</label></div>
+      <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Samsung Galaxy A50s</label></div>
+      <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Samsung Galaxy A30s</label></div>
+      <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Samsung Galaxy A10s</label></div>
+    </div>
+  </div>
+</div>
+<p>
+  <a class="btn text-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+   For Nokia lovers
+  </a>
+</p>
+<div class="collapse" id="collapseExample3">
+  <div class="card card-body border-0 " style="background: none;">
+    <div class="custom-control custom-checkbox  ">
+      <div class="d-block"><input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Nokia 2.3</label></div>
+      <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Nokia 7.2</label></div>
+      <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Nokia 6.2</label></div>
+      <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Nokia 4.2</label></div>
+      <div class="d-block"> <input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Nokia 3.2</label></div>
+    </div>
+  </div>
+</div>
+<p>
+  <a class="btn text-primary" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+    For Xiaomi lovers
+  </a>
+</p>
+<div class="collapse" id="collapseExample4">
+  <div class="card card-body border-0 " style="background: none;">
+    <div class="custom-control custom-checkbox  ">
+      <div class="d-block"><input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Redmi Note 9 Pro Max</label></div>
+       <div class="d-block"><input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Redmi Note 9 Pro</label></div>
+       <div class="d-block"><input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Redmi Mi 10 Pro </label></div>
+       <div class="d-block"><input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Redmi Mi 10</label></div>
+       <div class="d-block"><input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Redmi K30 5G</label></div>
+       <div class="d-block"><input type="checkbox" class="custom-control-input " id="customCheck1">
+      <label class="custom-control-label text-dark" for="customCheck1">Redmi K30 </label></div>
+    </div>
+  </div>
+</div></div>
+    <div class=" col-lg-8 bg-light  col-12 " style="border-top:2px solid #6c757d;border-bottom: 2px solid #6c757d;border-right:2px solid #6c757d;">
+      <div class=" d-lg-flex">
+
+   <div class="col-lg  " style="padding-top: 20px;">
+      <img src="https://www.91-img.com/pictures/135979-v1-nokia-7.2-6gb-ram-mobile-phone-large-1.jpg" class="col-lg-12 img-fluid" alt="Responsive image" style="height: 280px; width: 250px" >
+    </div>
+
+    <div class="col-lg   ">
+    <p class="">Nokia 7.2</p>
+    <div class="  d-lg-flex" style="margin-right: auto;">
+      <ul class="d-none d-lg-block col-7" style="padding-top: 10px;">
+        <li>Կանաչ</li>
+        <li>Սև</li>
+        <li>Արծաթագույն</li>
+      </ul>
+      <div class=" d-flex justify-content-center  col-auto    ">
+      <div class=" col" >
+        <p  class=" text-dark d-flex justify-content-center" style="font-size: 25px;">349.99$</p>
+           <a href="product.html" class="btn btn-primary col-12">Add to card</a>
+      </div>
+      </div>
+    </div>
+    </div>
+ </div>
+    <div class=" d-lg-flex">
+
+   <div class="col-lg  " style="padding-top: 20px;">
+      <img src="https://membershipwireless.com/media/catalog/product/i/p/iphone_11_pro_max_lineup_us-en_screen_1.png?width=700&height=700&canvas=700:700&quality=80&bg-color=255,255,255&fit=bounds" style="height: 300px;">
+    </div>
+
+    <div class="col-lg   ">
+    <p class="">Iphone 11 pro max</p>
+    <div class="  d-lg-flex" style="margin-right: auto;">
+      <ul class="d-none d-lg-block col-7" style="padding-top: 10px;">
+        <li>Ոսկեգույն</li>
+        <li>Մոխրագույն</li>
+        <li>Արծաթագույն</li>
+        <li>Կանաչ</li>
+
+      </ul>
+      <div class=" d-flex justify-content-center  col-auto    ">
+      <div class=" col" >
+        <p  class=" text-dark d-flex justify-content-center" style="font-size: 25px;">1099$</p>
+           <a href="product.html" class="btn btn-primary col-12">Add to card</a>
+      </div>
+      </div>
+    </div>
+    </div>
+ </div>
+    <div class=" d-lg-flex">
+
+   <div class="col-lg  " style="padding-top: 20px;">
+      <img src="https://www.xda-developers.com/files/2020/01/S20-Feature.jpg" class="col-lg-12 img-fluid" alt="Responsive image">
+    </div>
+
+    <div class="col-lg   ">
+    <p class="">Samsung Galaxy S20 Ultra</p>
+    <div class="  d-lg-flex" style="margin-right: auto;">
+      <ul class="d-none d-lg-block col-7" style="padding-top: 10px;">
+        <li>Կապույտ</li>
+        <li>Վարդագույն</li>
+        <li>Սև</li>
+        <li>Մոխրագույն</li>
+
+      </ul>
+      <div class=" d-flex justify-content-center  col-auto    ">
+      <div class=" col" >
+        <p  class=" text-dark d-flex justify-content-center" style="font-size: 25px;">1399.99$</p>
+           <a href="product.html" class="btn btn-primary col-12">Add to card</a>
+      </div>
+      </div>
+    </div>
+    </div>
+ </div>
+    <div class=" d-lg-flex">
+
+   <div class="col-lg  " style="padding-top: 20px;">
+      <img src="https://static.toiimg.com/photo/msid-75674852/75674852.jpg?resizemode=4&width=400" style="height: 250px; width:300px;">
+    </div>
+
+    <div class="col-lg   ">
+    <p class="">Redmi Note 9 pro max</p>
+    <div class="  d-lg-flex" style="margin-right: auto;">
+      <ul class="d-none d-lg-block col-7" style="padding-top: 10px;">
+        <li>Կանաչ</li>
+        <li>Արծաթագույն</li>
+        <li>Սև</li>
+
+      </ul>
+      <div class=" d-flex justify-content-center  col-auto    ">
+      <div class=" col" >
+        <p  class=" text-dark d-flex justify-content-center" style="font-size: 25px;">95600 դրամ</p>
+           <a href="product.html" class="btn btn-primary col-12">Add to card</a>
+      </div>
+      </div>
+    </div>
+    </div>
+ </div>
+    
+</div>
+     <div>
+     <div class="row p-3 mb-2 bg-light text-success">
+<div class="col-12 col-md-4 font-weight-normal" ><button type="button" class="btn btn-info text-light font-weight-normal">Հետադարձ կապ</div> 
+<div class="col-12 col-md-4 font-weight-normal" ><button type="button" class="btn btn-info text-light font-weight-normal">Զրուցարան</div>
+<div class="col-12 col-md-4 font-weight-normal" ><button type="button" class="btn btn-info text-light font-weight-normal">Գնումներ</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3"><button type="button" class="btn btn-light font-weight-normal d-none d-md-block"><strong>Samsung</strong></button><div class="d-none d-md-block">
+    <div><button type="button" class="btn btn-light">Samsung Galaxy S20 Ultra</button></div>
+    <div><button type="button" class="btn btn-light">Samsung Galaxy M01</button></div>
+    <div><button type="button" class="btn btn-light">Samsung Galaxy A21s</button></div>
+     <div><button type="button" class="btn btn-light">Samsung Galaxy A50s</button></div>
+      <div><button type="button" class="btn btn-light">Samsung Galaxy A30s</button></div>
+       <div><button type="button" class="btn btn-light">Samsung Galaxy A10s</button></div>
+    </div></div>
+    <div class="col-sm-3 d-none d-md-block"><button type="button" class="btn btn-light"><strong>iPhone</strong></button><div class="d-none d-md-block">
+    <div><button type="button" class="btn btn-light">iPhone 5s</button></div>
+    <div><button type="button" class="btn btn-light">iPhone 6</button></div>
+    <div><button type="button" class="btn btn-light">iPhone 6s</button></div>
+    <div><button type="button" class="btn btn-light">iPhone 6+</button></div>
+    <div><button type="button" class="btn btn-light">iPhone 7</button></div>
+    <div><button type="button" class="btn btn-light">iPhone 7+</button></div>
+    <div><button type="button" class="btn btn-light">iPhone 8</button></div>
+    <div><button type="button" class="btn btn-light">iPhone 8+</button></div>
+    <div><button type="button" class="btn btn-light">iPhone X</button></div>
+    <div><button type="button" class="btn btn-light">iPhone Xs</button></div>
+    <div><button type="button" class="btn btn-light">iPhone Xs Max</button></div>
+    <div><button type="button" class="btn btn-light">iPhone XR</button></div>
+    <div><button type="button" class="btn btn-light">iPhone 11</button></div>
+    <div><button type="button" class="btn btn-light">iPhone 11 Pro</button></div>
+    <div><button type="button" class="btn btn-light">iPhone 11 Pro Max</button></div>
+    </div>
+    </div>
+    <div class="col-sm-3"><button type="button" class="btn btn-light d-none d-md-block "><strong>Nokia</strong></button><div class="d-none d-md-block">
+    <div><button type="button" class="btn btn-light">Nokia 2.3</button></div>
+    <div><button type="button" class="btn btn-light">Nokia 6.2</button></div>
+    <div><button type="button" class="btn btn-light">Nokia 7.2</button></div>
+    <div><button type="button" class="btn btn-light">Nokia 4.2</button></div>
+    <div><button type="button" class="btn btn-light">Nokia 3.2</button></div>
+
+    </div></div>
+    <div class="col-sm-3"><button type="button" class="btn btn-light d-none d-md-block"><strong>Xiaomi</strong></button><div class="d-none d-md-block">
+    <div><button type="button" class="btn btn-light">Redmi Note 9 Pro Max</button></div>
+    <div><button type="button" class="btn btn-light">Redmi Note 9 Pro</button></div>
+    <div><button type="button" class="btn btn-light">Xiaomi Mi 10 Pro</button></div>
+    <div><button type="button" class="btn btn-light">Xiaomi Mi 10 </button></div>
+    <div><button type="button" class="btn btn-light">Redmi K30 5G</button></div>
+    <div><button type="button" class="btn btn-light">Redmi K30 </button></div>
+    </div></div>
+  </div>
+   <div class="row p-3 mb-2 bg-dark text-success">Մեզ հետևեք նաև։ <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" style="height: 30px; width: 30px; margin-left: 45px; "> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRgC27tmQ8D2rLVHg-GUZsZ08gwiu_5fnYSIGRc6zp6zrLT_QnG&usqp=CAU" style="height: 30px; width: 30px; margin-left: 60px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEUdofL///8Un/JltvUAmvEAnPEAnfEAmPHQ5/v3+/6QyPd4vvbC4Pr0+f6Mxvfq9P293fpvu/Ws1fng7/2Awfag0Pg5qPOt1vnJ4/uYzPe02fnj8P1GrPNSsPTZ6/yez/gvz/f5AAAHLElEQVR4nO2diZaiOhBAQ0iCCqKi0m7o///lw627XYCkqhKn+uWeM3Nm5owmF7JWlhZl+rcpRWrkX8akIpXiLyOjIXuiIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iIX+iYTCkNNqY9pckzs4/YdjKKZGWp6qqTmUqVKtJ+OWfNzRKlJtx8sN4MxHKUH39xw21yo/JK8dVt6NqXBL4sKFRk/Ebv8ub3L531PVx5/KCP2oo1WLa4XdxzNVz1qSqiySpnRIBGRpB8VSk2fT4nRmJh7dlVHP+xEg5pQIxNOUyc/3MK7rpKqC/SPV3TrUu95d/a5wyDDJU02Tn9Bzffslq2K+lvCTUdieL4v5i3ZKGGJpz3rZIRbW1EkySdaZVXf4qz061EGaolueEVnr4f3ajJ5aCSTIvHpqjyjFdiGF9TWqBUDS5teATM9eyAzA061tiKVhRHqCCrmUUZKj299TAirqvG+wldR7NQd7hT3rAgqrmUMHvym8/Nnc3lOmvFEtIiyobnKA0qp7ntrl2N9QPzfwa0PVn+y6DAS5Fpp1ClsdkY/1oAYaPRax4GTsOYRYwv/FBtx1/PRm1f57aVw+A4egx4aXrpFzBXuE8U83k3jUe7NMEGC5fn63L54G1cFnMfv6SO7So7oZq9pL6JHP4Cg1uSL9Zu7RvJIbJyNg/VIUWLJxaN4Dh22qU2j7Wh84GxMit+QbUw3dhlbYh0Hav8XvMB+Xo2AUDDIuOpHOrZ/vcFLsLOjbd7oam6ky81sNfpSwm9j3Y9/QIw565+W64xZEowZ37EAow8q77snAaqo7weVMCGwZDZk/95Wyr+8oqqikFzdYAhoNddiW6HSV4cp8sBSjSDzCUwyPnolEdEzh4+AIaGAJFoiyys5/ItzXS4vF0MYEt1oCiiZ39xQOjlX6VRNTDgIZS2GZqVNbPi4G9LfG/Yug0PZjt8oclT/jAO6Sh/Uu8Mt2sF7VSbaE1MnszNbGjDGgojG1I/jez0W5d5s3QelMnq5CG8GASApeJPd4Q0WCAAa7kQg2hATMEbsuGaEOXxSMi6mCGt9CaOgU2BC5YOhu2PUVxuIw6rdc4aRiHMhS6TW1ZCmWMCloXl8CFLkCs7ZZgldeZCNhpFOEMf639jQMaroH7wPDrFqEADmkgkaivzxgeYIIQQ/gsHQV0dwtgDdhxYkHEMpwhdP0PyQ66KwISawvb09+ANjSgWNtHiqnzPhqEodDgSSycKXgbHSgShYrMw5jD91+Bdl+G7/TB1RA4Pww/w4efT4AZaruYMB2uC79ow7fbFXyyhe/0ZBKJAvvBDXXY2S9iyzWPSBQwoI8zDBqmwZxnQ5yZUWUowQ1m0zzmVJBGb2+yBHVuCXXuyYjnfYpemKIO6CBPdmUhSuoEdbIDe3ZNBwjboATxp/Oklifw2QIrvj5oeG3EpcmaL4+RDeRJQIyhXAh1RaQTbxMqcICGwPC803Q6m838FlLsYU6MYZDIKfYV4uohcq+oFegLCFCGAeKKJ/S5fFxvoX2/RHiIjciwb78wCQv81QrYUZvfganjoWYfhsJv/BvvRzAu9dljYKb2ZIZC+QssUlxrQHEvRtZ1wgQNhR/JzR++FOGBfGpDke18CBYE7egZkttbfMSkHM7B9kNzP40+kEf5gfv0XiG6gUcq7KG7JzBXUjxljeqOIS3wp19/OJEJEt6iJLWoqAbic5Ke8JYvwnuipFHpjqJCHgkFqW/CklrJdFLNUVGbPVE/ccsS+V1fUurM5gaoTmYWJ1Fd8kN/m5nEDVVndI3MNTvkhsi+kVqQ3NBo3BAOute5G1pDkyHDGiPnm1IGoTQ02QLZVwCOag9CZtj2Ezm2LwTdWDSYMaJxqZZbdHAffndYb9YIDM9X/uG3K+5hR7UHQRrKdqRmcopJfuWjhF6y6GQo7wtB8nz3r9ZKLCqSiOnYTwm9ZNXFsMmb2pzXC7Wo03y7O5LNJWgHanBDT/ugptbX93g3FBo5YnnLib6X/41jSyN1TbycXQhvNfCWZfeTXc37a5RAjA4ea+AVyGkE1RC9x9HBZwW8Zxd044A6EHSB89pvBbxnFrqDFrlPaLqVnuvfHfCYRposBb/IIs2817/vjGJ2DGmdA8ajRd57zxI1yHFpO+h2CiDuv1JleXUdFfi5RTsxFPnOYnR6rBay63Ilj5DMD88/gUMdVtXm/f698bJY55ereILrCdIohjl7mkOal9t1VX3tvqrTZLVobhfT0KQBwENE2Fx+YMz1t8+8tsf8fPpnlHgnGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvInGvLn/2Fo5F/GpKJM/zblfwgoXWsfy5psAAAAAElFTkSuQmCC" style="height: 30px; width: 30px; margin-left: 60px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ0AAAC7CAMAAABIKDvmAAAAkFBMVEX/AAD/////OTn/5OT/9vb/ysr/dnb/19f/0tL/ior/nJz/kpL/39//tbX/TEz/Vlb/wcH/paX/oKD/8PD/6en/u7v/fHz/YGD/jo7/qqr/2dn/xsb/SEj/NDT/hYX/9PT/HBz/sLD/Kir/bGz/gID/EBD/XV3/QkL/Ly//UVH/cnL/IyP/ZWX/Pz//FRX/ICClOSYmAAAG6klEQVR4nO2da3eqOhBAMwqCgg8evq2i0ndP7///dzcItqiA0OrM0LC/nrVOJrtIhmSSCEBGi/H8diab5N817LgOiJv9T55vG6apj8b9uWt112E46eynw8Hzwy54FL8i2O0eVsPh034SrtfrmeXO+yPdNBe2791Y2k9teLLr46jb4X6w+2Vvf8vjrvU6fQu7PaevS0cekg3fWDqzyVOLuPclCFZva2urG+1qD08pG565tSbP1D38IZ+rTndr2DexsdGtJ+r+3Ib3D0u/9iMqtOG7dX0g8ghC/Yc2+n9NRcJkUd2GQx30HVnlPSA5Nvr8h41f8WyUt7H4Rx3t/ZmUtTGjjhSFwCxjw29Rx4mFe93GkjpGRPbXbMypI0RlWmyjRx0fMk9FNizq6ND5yLfhUsdGwCzPxpg6MhJG2TZs6riI8DJtvFOHRcQ0y0aHOioyRpc2TOqY6Hi/tPFAHRMhzrkNNceThM9zGy/UEZEyPrWhU8dDy+DUxpQ6HmL8ExvU0VDjpG0o/kMRYpW2ocbcXxFayobKyUaM/m1Do46FHuvbhsJZ+ZHVtw3V5v+y+Laxpw6FAfaXjU/qUBgwOtpoXqIieY1GNhbUkXBgerSh9Nf8F0cb6q2iZKElNpohJWKR2NhRB8KCUWKDOg4e9GIbHnUcPAhjGwZ1HDwYxDZUql8pIrbxl2shqxDb6FKHwQT/YEPdBdhTjIONFXUYTFgebPzxsuHSOAcbeO29vOK1VZ1ZZANxdqMFW7zGKhNGNtp47bUAtDe85ioyjGwgpqKtwwQ914/EXWQDcfmgFa/vcZ2ij2wgznwlNsDjuVUusoGYmB9tAIw4DuuetIE4D/htA2CN12xZbGkDMay0DbDZbSI0pY0JXnMnNoBd8qFLGx94zZ3ZgA2v5KMvbSB+tJ3bkMkHp1pER9pATIYubbBKPixpA7G5LBvgs0k+1gxsyOQjQIyhgAkLG1wmIz+Y2AB7gBhGHisQmMUb+TZYJB87ED5ic0U2YEM/Ww0CcbKn2IZMPqjLVkFg7u27YoN8CyoIzDKnqzbAJ90MAQKzcva6DYBlgBjQGRo7G5RbAHyGNuiSj7bArFcoaQOgjxhUCltglkeWtgEaSfJhCMw/Q3kbNMmHKTAz4io2KJIPU2AeTVPNBnjYyYcuMOucKtqQyQfu7oiRwHweK9tATj7G3G1AGzH52ArMWdqf2MBMPuY1sAEa1gKYIzC3Y/zQBoCBk3y49bCBVOLbq4sN2CCskNbHBoB+9+TDqpGN+ycf9bIB7fsuoVt1GGHT3LXGocs+Fz3Bv29i2q3Vs3HvX3WdbNx/TKmPDYx8Y1YXGyi56Kweb1Gk7xSrDjbQvmHrYANvfqPHe14UcOe+XM5z5hGo86IObxvIc+ZbxqtL+OspfbYrjxRrbSOmq9I067BL6QMP7mv0psA8WpR7/YbZ1PakMBjaoKv7stnZoKwJbDf1oin8ppY4hdbUmado9iCkAbFBbI35/hTR7F1K8cjEBo99bS8sbHDZ8/jKwAaf/bB7aSPAa475XulQ2kC8GZf5PvqutDHEa475GQs9aQMx6WF+/sZc2gjxmmN+NstI2kAc65mf2xOdVIP4Umd+ptNC2kD89R5t+Ihv7gr40gbiNHENzoLDPhnPZHvzamQDcfIrOkOS7zUDQWQD8XD3FusL3gfN2bMpOsg2eNM92OD04USJe7Ch+v2fR+ITvBE/VFgTn+7eXDQUE5/8T1QewA442GhueTzwGNvAXIllzBCae5e+WTc2UriJDdb5Mhp6YoPhpBwBdmKjuXgpAhIbyt+/HrE72sAs72FL52ijGVREPKTENpp7qKLFlKMNHsUktHhfNprLg8UnfNloXqPxSxSSW+mVZ5uy0Ux/2SkbTf4FKRvK/1QmJzboq5pp0U9sKH6bcgAnNjArAxnintlQ+z0KZzaUngCbX9hQOB99gAsbCi+5mRk2oEUdFRFryLKh6G8lXcSasgGYlwDwwc+xwa7wGwMD8mxQ70clYAn5NpRbWhlBkQ3FijlMKLahUjVH0D7v/IUN8FRZT3jSLvp+aUOVrNTJ6HmWDdTz14gY+lkdz7QBMGa7UeAm7EbZ3c6xIQeXv1ti/DDO63SuDQCdzSbmmzI9H1bL2ZDDi8tuX+IvWTleUYcLbUg2S+uvzIpNLX1zpbfXbBxo6053+h91b37MamL1jcJnopKNBG+hb3vdyZD6eJ1SPLaewpmjG5kj6S1spND8hbmUasLJx2uLxWj8+DLYh13LnY9Nwy71INzOxiUb316Y5rK/ddyeNeuuw850KBk8P+yCm/Q22LWeB8PpvhPKTvfc+Xasm6axsG3/2tugPDezUQnN89t5+J4WQxDX/6+3UVUbGgLqAAAAAElFTkSuQmCC" style="height: 30px; width: 30px; margin-left: 60px;"><div style="display: inline; margin-left:20px ;"> ©Tumo Center For Creative Technologies</div></div>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Մտնել</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Էլ․ հասցե</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Գաղտնաբառ</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Ես ռոբոտ չեմ</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Մտնել</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Գրանցվել</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Էլ․հասցե</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Գաղտնաբառ</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Հասցե</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Քաղաք</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Մարզ</label>
+       <input type="text" class="form-control" id="inputCity">
+      </div>
+  <div class="form-group">
+    <div class="form-check col-md-12">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Ես ռոբոտ չեմ
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Գրանցվել</button>
+</form>
+      </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
